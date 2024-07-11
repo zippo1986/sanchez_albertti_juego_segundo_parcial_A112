@@ -65,9 +65,9 @@ class FormPuntaje:
         
         for puntaje in self.puntajes:
             
-            texto_puntaje = self.fuente.render(f"puntaje: {puntaje["puntaje"]}\n", True, self.color_texto)
-            texto_tiempo = self.fuente.render(f"tiempo: {puntaje["tiempo"]}\n", True, self.color_texto)
-            texto_cantidad_enemigos_eliminados = self.fuente.render(f"puntaje: {puntaje["cantidad_enemigos"]}\n", True, self.color_texto)
+            texto_puntaje = self.fuente.render(f"Puntaje: {puntaje["puntaje"]}\n", True, self.color_texto)
+            texto_tiempo = self.fuente.render(f"Tiempo: {puntaje["tiempo"]}\n", True, self.color_texto)
+            texto_cantidad_enemigos_eliminados = self.fuente.render(f"Kills: {puntaje["cantidad_enemigos"]}\n", True, self.color_texto)
             self.pantalla.blit(texto_puntaje, (460, 166))
             self.pantalla.blit(texto_tiempo, (460, 244))
             self.pantalla.blit(texto_cantidad_enemigos_eliminados, (460, 319))

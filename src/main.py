@@ -59,12 +59,12 @@ while ejecutando:
     elif estado_actual == "formulario_rankings":
         formulario_ranking.update(eventos)
     
-    """elif estado_actual == "game_over":
+    elif estado_actual == "game_over":
         
-        nuevo_estado = formulario_game_over.update(eventos,"game_over.wav")
+        nuevo_estado = formulario_puntaje.update(eventos)
         if nuevo_estado:
             estado_actual = nuevo_estado
-        
+    """    
         if nuevo_estado:
             estado_actual = nuevo_estado
     elif estado_actual == "salir":
